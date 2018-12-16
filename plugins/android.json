@@ -8,7 +8,7 @@
   },
   "installed_plugins": {
     "cordova-plugin-googlemaps": {
-      "API_KEY_FOR_ANDROID": "AIzaSyB-A3Q4fAt2mWfmDuHiGdD7p4QqdybYj-Q",
+      "API_KEY_FOR_ANDROID": "YOURAPIKEY",
       "PLAY_SERVICES_VERSION": "15.0.1",
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "io.ionic.starter"

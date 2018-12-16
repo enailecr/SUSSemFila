@@ -6,8 +6,8 @@
     },
     "is_top_level": true,
     "variables": {
-      "API_KEY_FOR_ANDROID": "AIzaSyB-A3Q4fAt2mWfmDuHiGdD7p4QqdybYj-Q",
-      "API_KEY_FOR_IOS": "AIzaSyB-A3Q4fAt2mWfmDuHiGdD7p4QqdybYj-Q"
+      "API_KEY_FOR_ANDROID": "YOURAPIKEY",
+      "API_KEY_FOR_IOS": "YOURAPIKEY"
     }
   },
   "cordova-plugin-whitelist": {
