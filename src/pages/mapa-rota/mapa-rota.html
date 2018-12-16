@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Rota até a melhor unidade</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="form-error">{{mapaError}}</div>
+<div>
+  <h3>Tempo Total para ser atendido: {{tempoTotal}}</h3>
+  <h4>Unidade SUS: {{bestUnidade}}</h4>
+</div>
+<div #map id="map" style="height:100%;"></div>
+</ion-content>

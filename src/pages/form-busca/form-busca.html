@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Filtros de busca</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="buscar()">
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Raio de busca (em Km)</ion-label>
+      <ion-range min="1" max="50" [(ngModel)]="raio" name="raio" pin="true">
+        <ion-label range-left>1</ion-label>
+        <ion-label range-right>50</ion-label>
+      </ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Meio de transporte preferencial</ion-label>
+      <ion-select [(ngModel)]="transporte" name="transporte">
+        <ion-option value="WALKING">A pé</ion-option>
+        <ion-option value="DRIVING">Carro</ion-option>
+        <ion-option value="TRANSIT">Transporte público</ion-option>
+        <ion-option value="BICYCLING">Bicicleta</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <!-- <ion-item >
+      <ion-label >Especialidade médica</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item> -->
+
+  </ion-list>
+  <button ion-button color="light" block type="submit">
+    Busca unidade SUS
+  </button>
+</form>
+</ion-content>

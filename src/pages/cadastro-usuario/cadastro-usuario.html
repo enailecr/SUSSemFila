@@ -1,0 +1,31 @@
+<ion-content padding class="fundoazul">
+  <ion-img width="90px" height="90px" class="logo" src="../assets/imgs/stethoscope.png"></ion-img>
+  <ion-label class="tituloApp">Cadastre-se</ion-label>
+
+<form (ngSubmit)="signup()" [formGroup]="form" >
+  <ion-list>
+
+    <ion-item class="transparente" color="light"  [ngClass]="{ invalid: emailErrors.hasError('*', ['touched']) }">
+      <ion-label floating color="light">E-mail</ion-label>
+      <ion-input type="email" formControlName="email"></ion-input>
+    </ion-item>
+    <div ngxErrors="email" #emailErrors="ngxErrors">
+				<div [ngxError]="['email', 'required']" [when]="['touched']">Deve ser um em-mail válido</div>
+      </div>
+
+    <ion-item class="transparente" [ngClass]="{ invalid: passwordErrors.hasError('*', ['touched']) }">
+      <ion-label floating color="light">Senha</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <div ngxErrors="password" #passwordErrors="ngxErrors">
+				<div [ngxError]="['minlength', 'required']" [when]="['touched']">Mínimo de 6 caracteres</div>
+      </div>
+  </ion-list>
+
+  <div padding>
+    <div class="form-error">{{signupError}}</div>
+    <p></p>
+    <button ion-button color="light" type="submit" block [disabled]="!form.valid">Cadastrar</button>
+  </div>
+</form>
+</ion-content>

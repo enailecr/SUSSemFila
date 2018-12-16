@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Adicionar Tempo de Atendimento</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="cadastrar()" [formGroup]="unidadeForm">
+  <ion-list>
+    <ion-item>
+      <ion-label>Unidade</ion-label>
+      <ion-select  formControlName="unidade">
+        <ion-option *ngFor="let unidade of unidades | async" [value]="unidade">
+          {{unidade.nome}}
+        </ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+    <ion-label floating>Tempo de atendimento</ion-label>
+    <ion-input type="time" formControlName="tempoAtendimento"></ion-input>
+  </ion-item>
+
+  </ion-list>
+  <button ion-button type="submit" color="light" block >Cadastrar informação</button>
+  </form>
+</ion-content>
