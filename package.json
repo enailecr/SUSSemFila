@@ -32,7 +32,7 @@
     "@ultimate/ngxerrors": "^1.4.0",
     "angularfire2": "^5.0.0-rc.6",
     "cordova-android": "7.1.1",
-    "cordova-browser": "5.0.4",
+    "cordova-browser": "6.0.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-file": "6.0.1",
     "cordova-plugin-geolocation": "~4.0.1",
